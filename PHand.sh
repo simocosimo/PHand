@@ -52,15 +52,18 @@ function CreatePassword()
 {
 	if [ $mode = "n" ]; then
 		password = $[($RANDOM % 9) + ($lenght * 10)
+	fi
 }
 
 if [ ! -d "~/.phand" ]; then
 	mkdir "~/.phand"
+fi
 
 if [ $1 = "-new" ] || [ $1 = "-n" ]; then
 	CreationMenu()
 else if [ $1 = "-look" ] || [ $1 = "-l" ]; then
-	LookCreated
+		LookCreated
+	fi
 
 
 	
